@@ -24,10 +24,15 @@ namespace Classe2
         {
             if(registrato == true)
             {
-                string stringa = codice + cognome + nome + registrato;
+                string stringa = $"{codice}, {cognome}, {nome}, {registrato};";
                 return stringa;
-            }else
-                return string.Empty;
+            }
+            else
+            {
+                string stringa = "utente non registrato";
+                return stringa;
+            }
+                
         }
 
         // costruttore 
